@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.post('/submit', async (req, res) => {
 
 	var user_id = req.body.id
-    var token = req.body.token
+	var token = req.body.token
 
 	res.status(200).json({message: 'Success!', payload: {
 		user_id : user_id,
